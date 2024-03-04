@@ -13,10 +13,10 @@ Sprite:
     y: 704
     width: 48
     height: 42
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -21}
   m_Border: {x: 0, y: 0, z: 0, w: 0}
   m_PixelsToUnits: 16
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
   m_Extrude: 1
   m_IsPolygon: 0
   m_AtlasName: 
@@ -103,7 +103,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 128
-      _typelessdata: 0000c03f0000a83f000000000000a8bf0000a8bf000000000000c03f0000a8bf000000000000b8bf0000a83f000000000000c0bf0000a03f000000000000c0bf000090bf0000000000000000000000000000203e00803a3f0000e63d0000303f0000203e0000303f0000e23d00803a3f0000e03d00403a3f0000e03d00c0303f
+      _typelessdata: 0000c03f00002840000000000000a8bf00000000000000000000c03f00000000000000000000b8bf00002840000000000000c0bf00002440000000000000c0bf0000403e0000000000000000000000000000203e00803a3f0000e63d0000303f0000203e0000303f0000e23d00803a3f0000e03d00403a3f0000e03d00c0303f
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -114,7 +114,7 @@ Sprite:
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 64
-    uvTransform: {x: 16, y: 136, z: 16, w: 725}
+    uvTransform: {x: 16, y: 136, z: 16, w: 704}
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
@@ -194,7 +194,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 128
-      _typelessdata: 0000c03f0000a83f000000000000a8bf0000a8bf000000000000c03f0000a8bf000000000000b8bf0000a83f000000000000c0bf0000a03f000000000000c0bf000090bf0000000000000000000000000000203e00803a3f0000e63d0000303f0000203e0000303f0000e23d00803a3f0000e03d00403a3f0000e03d00c0303f
+      _typelessdata: 0000c03f00002840000000000000a8bf00000000000000000000c03f00000000000000000000b8bf00002840000000000000c0bf00002440000000000000c0bf0000403e0000000000000000000000000000203e00803a3f0000e63d0000303f0000203e0000303f0000e23d00803a3f0000e03d00403a3f0000e03d00c0303f
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -205,14 +205,14 @@ Sprite:
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 64
-    uvTransform: {x: 16, y: 136, z: 16, w: 725}
+    uvTransform: {x: 16, y: 136, z: 16, w: 704}
     downscaleMultiplier: 1
   m_PhysicsShape:
-  - - {x: -1.4375, y: 1.3125}
-    - {x: -1.5, y: 1.25}
-    - {x: -1.5, y: -1.125}
-    - {x: -1.3125, y: -1.3125}
-    - {x: 1.5, y: -1.3125}
-    - {x: 1.5, y: 1.3125}
+  - - {x: -1.4375, y: 2.625}
+    - {x: -1.5, y: 2.5625}
+    - {x: -1.5, y: 0.1875}
+    - {x: -1.3125, y: 0}
+    - {x: 1.5, y: 0}
+    - {x: 1.5, y: 2.625}
   m_Bones: []
   m_SpriteID: f14882357de220450800000000000000

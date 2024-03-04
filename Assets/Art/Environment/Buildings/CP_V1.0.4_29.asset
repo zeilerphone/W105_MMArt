@@ -13,10 +13,10 @@ Sprite:
     y: 704
     width: 64
     height: 42
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -21}
   m_Border: {x: 0, y: 0, z: 0, w: 0}
   m_PixelsToUnits: 16
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
   m_Extrude: 1
   m_IsPolygon: 0
   m_AtlasName: 
@@ -103,7 +103,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: 000000c00000a83f00000000000000400000a8bf00000000000000400000a83f00000000000000c00000a8bf000000000000803c00803a3f0000a03d0000303f0000a03d00803a3f0000803c0000303f
+      _typelessdata: 000000c00000284000000000000000400000000000000000000000400000284000000000000000c000000000000000000000803c00803a3f0000a03d0000303f0000a03d00803a3f0000803c0000303f
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -114,7 +114,7 @@ Sprite:
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 64
-    uvTransform: {x: 16, y: 48, z: 16, w: 725}
+    uvTransform: {x: 16, y: 48, z: 16, w: 704}
     downscaleMultiplier: 1
   m_AtlasRD:
     serializedVersion: 3
@@ -194,7 +194,7 @@ Sprite:
         format: 0
         dimension: 0
       m_DataSize: 80
-      _typelessdata: 000000c00000a83f00000000000000400000a8bf00000000000000400000a83f00000000000000c00000a8bf000000000000803c00803a3f0000a03d0000303f0000a03d00803a3f0000803c0000303f
+      _typelessdata: 000000c00000284000000000000000400000000000000000000000400000284000000000000000c000000000000000000000803c00803a3f0000a03d0000303f0000a03d00803a3f0000803c0000303f
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -205,12 +205,12 @@ Sprite:
     textureRectOffset: {x: 0, y: 0}
     atlasRectOffset: {x: -1, y: -1}
     settingsRaw: 64
-    uvTransform: {x: 16, y: 48, z: 16, w: 725}
+    uvTransform: {x: 16, y: 48, z: 16, w: 704}
     downscaleMultiplier: 1
   m_PhysicsShape:
-  - - {x: -2, y: 1.3125}
-    - {x: -2, y: -1.3125}
-    - {x: 2, y: -1.3125}
-    - {x: 2, y: 1.3125}
+  - - {x: -2, y: 2.625}
+    - {x: -2, y: 0}
+    - {x: 2, y: 0}
+    - {x: 2, y: 2.625}
   m_Bones: []
   m_SpriteID: 2cb7112bd5a80f0b0800000000000000
