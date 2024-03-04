@@ -30,4 +30,10 @@ public class FriendlyController : MonoBehaviour
         rigidbody2d.MovePosition(position);
         
     }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject == player){
+            Debug.Log("Player touched me!");
+        }
+    }
 }

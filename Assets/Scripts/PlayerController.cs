@@ -8,8 +8,11 @@ using UnityEngine.UIElements;
 public class PlayerController : MonoBehaviour
 {
     public InputAction MoveAction;
+    public InputAction CageDeploy;
     public Rigidbody2D rigidbody2d;
     Vector2 moveVector;
+    float deployVector;
+    public int cageCount;
     Vector2 moveDirection = new Vector2(1, 0);
     Vector2 position;
     public float speed = 5.0f;
@@ -21,18 +24,31 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         MoveAction.Enable();
+        CageDeploy.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        cageCount = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
         moveVector = MoveAction.ReadValue<Vector2>();
+        deployVector = CageDeploy.ReadValue<float>();
         if(moveVector.magnitude != 0){
             moveVector.Normalize();
         }
-        //Debug.Log(moveVector);
+        if(deployVector > 0){
+            if(cageCount > 0){
+                cageCount--;
+                Debug.Log("Cage Deployed! " + cageCount + " cages left.");
+            } else {
+                Debug.Log("No cages left!");
+            }
+        } else if(deployVector < 0){
+            Debug.Log("Cage Retracted!");
+            cageCount++;
+        }
 
         if(!Mathf.Approximately(moveVector.x, 0) || !Mathf.Approximately(moveVector.y, 0)){
             moveDirection.Set(moveVector.x, moveVector.y);
