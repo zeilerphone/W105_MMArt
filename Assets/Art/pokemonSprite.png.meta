@@ -1,0 +1,479 @@
+fileFormatVersion: 2
+guid: 70e4839f7b0606348a04504d02002d06
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pokemon_standfront
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 196
+        width: 34
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a9e5a7c40d60e49bef5665ceff26e7
+      internalID: -2068839034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkrightFront
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 194
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03846154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e24819f54aa6f54a8c51c872ade192c
+      internalID: -190852659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standFront2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 196
+        width: 34
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990bec0231d984c4a9c48fbd4988f25f
+      internalID: 385100896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkleftFront
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 194
+        width: 34
+        height: 52
+      alignment: 9
+      pivot: {x: 0.5, y: 0.03846154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0b84c6ff3fa6547b1841cd7af22b3e
+      internalID: -1052806722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standLeft
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 132
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b0ff1ea4ce2f64693e8cec0ba47fb8
+      internalID: 397468015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkrightLeft
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 132
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.041666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176795d58a8a26846b954edf7aee8f7b
+      internalID: -320843428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standLeft2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 132
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f0f5b8d8363f142a65c57a16ddc253
+      internalID: -843608979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkleftLeft
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 134
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caff1822ce73d944eaa4b5e55b71d9d6
+      internalID: -1759765229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standRight
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 68
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda5061544645b2488376644d1917d11
+      internalID: 1780426202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkleftRight
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 68
+        width: 32
+        height: 48
+      alignment: 9
+      pivot: {x: 0.5, y: 0.041666668}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3048d6451c8c45b41987683a9f8994dc
+      internalID: -1566277942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standRight2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 68
+        width: 32
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d9b71f14879361439a3d65387c4e338
+      internalID: 2055579810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkrightRight
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 70
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebab30da5d048904a9b4dfc8e7555153
+      internalID: 445480855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standBack
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 4
+        width: 34
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4082e505de81359469953667129126f6
+      internalID: 1178366294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkrightBack
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 2
+        width: 34
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11808d968696fcb4c8b2aac59a585a77
+      internalID: -18054480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_standBack2
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 4
+        width: 34
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b52ca258ffedcfc4a88f1914e1f161d0
+      internalID: -1189421572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pokemon_walkleftBack
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2
+        width: 34
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.04}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef564cc962344d146987341c6330351e
+      internalID: -1916186520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pokemon_standBack: 1178366294
+      pokemon_standBack2: -1189421572
+      pokemon_standFront2: 385100896
+      pokemon_standLeft: 397468015
+      pokemon_standLeft2: -843608979
+      pokemon_standRight: 1780426202
+      pokemon_standRight2: 2055579810
+      pokemon_standfront: -2068839034
+      pokemon_walkleftBack: -1916186520
+      pokemon_walkleftFront: -1052806722
+      pokemon_walkleftLeft: -1759765229
+      pokemon_walkleftRight: -1566277942
+      pokemon_walkrightBack: -18054480
+      pokemon_walkrightFront: -190852659
+      pokemon_walkrightLeft: -320843428
+      pokemon_walkrightRight: 445480855
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
