@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public InputAction MoveAction;
     Rigidbody2D rigidbody2d;
     Vector2 moveVector;
+    Vector2 position;
+    Vector2 positionPixel;
     public float speed = 5.0f;
 
     // Start is called before the first frame update
@@ -30,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 position = (Vector2)transform.position + moveVector * speed * Time.deltaTime;        
+        position = (Vector2)transform.position + moveVector * speed * Time.deltaTime;  
         rigidbody2d.MovePosition(position);
     }
 }
