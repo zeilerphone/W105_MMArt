@@ -22,6 +22,6 @@ public class GameUIScript : MonoBehaviour
         int cageNum = player.GetComponent<PlayerController>().cageCount;
         cageCount.text = " " + cageNum + "/3";
         int catNum = player.GetComponent<PlayerController>().catCount;
-        catCount.text = " " + catNum;
+        catCount.text = "" + catNum;
     }
 }
