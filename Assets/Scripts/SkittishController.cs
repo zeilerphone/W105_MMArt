@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SkittishController : MonoBehaviour
@@ -10,6 +11,7 @@ public class SkittishController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 moveVector;
     Vector2 position;
+    bool caged = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,12 +20,18 @@ public class SkittishController : MonoBehaviour
 
     void FixedUpdate()
     {   
+        if(caged){
+            return;
+        }
         moveVector = new Vector2(0,0);
         if(Vector2.Distance(rigidbody2d.position, player.GetComponent<Rigidbody2D>().position) < 5.0f){
             // calculate the vector away from the player
             moveVector = rigidbody2d.position - player.GetComponent<Rigidbody2D>().position;
-        } else {
-            //moveVector = new Vector2(Random.Range(-1.0f, 1.0f), Random.Range(-1.0f, 1.0f));
+        } else if (GameObject.FindGameObjectWithTag("cage") != null){
+            GameObject cage = GameObject.FindGameObjectWithTag("cage");
+            if(Vector2.Distance(rigidbody2d.position, cage.GetComponent<Rigidbody2D>().position) < 10.0f){
+                moveVector = cage.GetComponent<Rigidbody2D>().position - rigidbody2d.position;
+            }
         }
         moveVector.Normalize();
         position = rigidbody2d.position + moveVector * movementSpeed * Time.deltaTime;  
@@ -34,7 +42,14 @@ public class SkittishController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject == player){
-            Debug.Log("Player touched me!");
+            player.GetComponent<PlayerController>().catCount++;
+            this.GameObject().SetActive(false);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "cage"){
+            rigidbody2d.MovePosition(other.GameObject().GetComponent<Rigidbody2D>().position);
+            caged = true;
         }
     }
 }

@@ -189,6 +189,42 @@ MonoBehaviour:
       m_Action: Move
       m_Flags: 8
     m_Flags: 0
+  CageDeploy:
+    m_Name: Cage Deploy
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a75a84d1-8e20-4dcd-8d23-f9dff890f660
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: Deploy/Pickup
+      m_Id: 922d908a-68d6-4cb9-bfab-8c06984b63f5
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Cage Deploy
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 2b5a1926-3c47-4a8e-85c3-f7632114a63a
+      m_Path: <Keyboard>/c
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Cage Deploy
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6a6dd658-d5b7-4626-ab1b-199de690751b
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Cage Deploy
+      m_Flags: 8
+    m_Flags: 0
+  rigidbody2d: {fileID: 0}
+  cage: {fileID: 3609428170440794865, guid: f4daab30ebcabc540a27f0d8fd0b71a6, type: 3}
+  cageCount: 3
   speed: 4
 --- !u!50 &8613343106618082402
 Rigidbody2D:

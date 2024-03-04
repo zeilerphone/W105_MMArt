@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FriendlyController : MonoBehaviour
@@ -10,6 +11,8 @@ public class FriendlyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 moveVector;
     Vector2 position;
+    bool caged = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +21,9 @@ public class FriendlyController : MonoBehaviour
 
     void FixedUpdate()
     {   
+        if(caged){
+            return;
+        }
         moveVector = new Vector2(0,0);
         if(Vector2.Distance(rigidbody2d.position, player.GetComponent<Rigidbody2D>().position) < 5.0f){
             // calculate the vector towards the player
@@ -33,7 +39,14 @@ public class FriendlyController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject == player){
-            Debug.Log("Player touched me!");
+            player.GetComponent<PlayerController>().catCount++;
+            this.GameObject().SetActive(false);
+        }
+    }
+    void OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "cage"){
+            rigidbody2d.MovePosition(other.GameObject().GetComponent<Rigidbody2D>().position);
+            caged = true;
         }
     }
 }
